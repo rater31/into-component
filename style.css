@@ -6,6 +6,9 @@ body{
     font-family: 'Poppins', sans-serif;
     align-items: baseline;
 }
+.img-fondo-mobile{
+    display: none;
+}
 .img-fondo{
     position: fixed;
     z-index: -1;
@@ -14,17 +17,24 @@ body{
     color: white;
 }
 h1{
-    font-size: 45px;
-    position: left;
+    font-size: 50px;
+}
+.cont-tit{
+    float: left;
     margin-right: 50%;
-    margin-top: 10%;
+    margin-left: 10%;
+    margin-top: 13%;
+    
 }
-.p1{
-    text-align: left;
-    margin-right: 700px;
+.cuadro-derecha{
+    position: fixed;
+    margin-top: 5%;
+    margin-right: 14%;
 }
-
 .title-free{
+    margin-top: 6%;
+    margin-left: 51.3%;
+    position: fixed;
     background-color: hsl(248, 32%, 49%);
     text-align: center;
     border-radius: 15px;
@@ -32,23 +42,109 @@ h1{
     padding-bottom: 5px;
 }
 .title-free{
-    padding-inline: 130px;
+    padding-inline: 95px;
     float: right;
-    flex-wrap: wrap;
 }
 .cuadro-llenar{
-    margin-top: 10px;
-    margin-left: 500px;
+    margin-top: 8%;
+    margin-left: 700px;
     float: right;
     background-color: white;
     display: grid;
     border-radius: 15px;
     padding: 30px; 
+ 
 }
 .cuadro{
-    border-radius: 15px;
-    margin-top: 5px;
+    text-align: left;
+    border-color: hsl(246, 25%, 77%);
+    border-radius: 5px;
+    border-style: solid ;
+    margin-top: 15px;
     margin-bottom: 10px;
     padding-top: 12px;
     padding-bottom: 12px;
+    padding-right: 275px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: hsl(248, 7%, 43%);
+}
+.claim{
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.terminos .link{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    
+    
+}
+.terminos{
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+    margin-left: 60px;
+}
+.link{
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+}
+@media screen and (max-width: 600px){
+
+    body{
+        align-items: center;
+    }
+
+    .img-fondo{
+        display: none;
+    }
+    .img-fondo-mobile{
+        display:block;
+        position: fixed;
+    }
+
+    .cont-tit{
+        font-size: 18px;
+        text-align: center;
+        margin: 5%;
+    }
+    h1{
+        font-size: 28px;
+    }
+    .title-free{
+        align-items: center;
+        font-size: 18px;
+        margin-top: 75vw;
+        margin-left:15%;
+        margin-right: 15%;
+            padding: 2%;
+        position: absolute;
+    }
+    .cuadro-derecha{    
+        margin-left: -162% ;
+        margin-top: 350px;
+        padding: 1%;
+        position: absolute;
+    }
+    .cuadro, .claim{
+
+        margin-right: 10%;
+        padding-right: 1%;
+        margin-left: 10%;
+    
+    }
+    .terminos{
+        margin-left: 1px;
+    }
+    .terminos, .link{
+        text-align: center;
+        font-size: 13px;
+        padding: 0%;
+        margin: 0%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
